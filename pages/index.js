@@ -2,8 +2,10 @@ import Head from 'next/head';
 import AboutHome from '../components/AboutHome';
 import BannerHero from '../components/BannerHero';
 import BlogHome from '../components/BlogHome';
+import Footer from '../components/Footer';
 import GalleryHome from '../components/GalleryHome';
 import Header from '../components/Header';
+import NewsletterHome from '../components/NewsletterHome';
 import SectionTwo from '../components/SectionTwo';
 import Services from '../components/Services';
 import { getAllPosts } from '../lib/dato-cms';
@@ -26,10 +28,10 @@ export default function Home({posts}) {
         <AboutHome />
         <GalleryHome />
         <BlogHome posts={posts} />
+        <NewsletterHome />
       </main>
 
-      <footer>
-      </footer>
+      <Footer />
     </div>
   )
 }
