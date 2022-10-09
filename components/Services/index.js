@@ -12,7 +12,7 @@ function Services() {
             <p className='subtitle'>Our Services for you</p>
             <div className='services__top'>
                 <h2>Push your limits forward we offer to you</h2>
-                <ButtonJoin text="More Services" />
+                <ButtonJoin text="More Services" link="/" />
             </div>
             <div className='services__bottom'>
                 <ServicesCard>

@@ -10,7 +10,7 @@ function SectionTwo() {
                 <div className='card__txt'>
                     <h3>For Girls</h3>
                     <p>There are many variations of passages of lorem ipsum available, but the majority have suffered alteration.</p>
-                    <ButtonJoin text="Join Us" />
+                    <ButtonJoin text="Join Us" link="/" />
                 </div>
             </div>
         </SectionTwoCard>
@@ -19,7 +19,7 @@ function SectionTwo() {
                 <div className='card__txt'>
                     <h3>For Boys</h3>
                     <p>There are many variations of passages of lorem ipsum available, but the majority have suffered alteration.</p>
-                    <ButtonJoin text="Join Us" />
+                    <ButtonJoin text="Join Us" link="/" />
                 </div>
             </div>
         </SectionTwoCard>

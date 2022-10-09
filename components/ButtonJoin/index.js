@@ -24,10 +24,10 @@ const ButtonJoinContainer = styled.div`
     }
 `
 
-function ButtonJoin({ text }) {
+function ButtonJoin({ text, link }) {
   return (
     <ButtonJoinContainer>
-        <Link href="/">{text}</Link>
+        <Link href={link}>{text}</Link>
     </ButtonJoinContainer>
   )
 }
