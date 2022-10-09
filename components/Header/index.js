@@ -13,9 +13,6 @@ function Header() {
     const [blockScroll, allowScroll] = useScrollBlock();
     const [ showSearch, setShowSearch ] = useState(false);
 
-    console.log(showSearch, 'SHOW MODAL')
-
-
   return (
     <HeaderContainer>
         <div className='header__content'>

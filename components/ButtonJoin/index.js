@@ -12,6 +12,15 @@ const ButtonJoinContainer = styled.div`
         background-color: ${({theme}) => theme.secondary};
         color: ${({theme}) => theme.white};
         text-transform: uppercase;
+        border: 1px solid transparent;
+        transition: all 150ms ease-in;
+
+        &:hover {
+            border: 1px solid ${({theme}) => theme.secondary};
+            background-color: transparent;
+            color: ${({theme}) => theme.secondary};
+            transform: scale(1.02);
+        }
     }
 `
 
