@@ -10,9 +10,10 @@ function GalleryHome() {
         
         <p className='subtitle'>Galeria</p>
         <div className='gallery__container'>
-            {data.map ((image) => {
+            {data.map ((image, index) => {
                     return (
                         <a
+                            key={index}
                             className='image__container'
                             href={image.url}
                             rel="noreferrer noopener"
