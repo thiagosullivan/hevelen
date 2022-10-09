@@ -52,13 +52,25 @@ function Header() {
                     <AiOutlineSearch />
                 </button>
                 <HeaderSocialMedia>
-                    <a href="www.google.com.br">
+                    <a
+                        href="https://www.instagram.com/hevelenjeronymo/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                    >
                         <FaInstagram />
                     </a>
-                    <a href="www.google.com.br">
+                    <a
+                        href="https://www.facebook.com/profile.php?id=100066586125256"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                    >
                         <FaFacebookF />
                     </a>
-                    <a href="www.google.com.br">
+                    <a
+                        href="https://www.google.com.br"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                    >
                         <FaWhatsapp />
                     </a>
                 </HeaderSocialMedia>

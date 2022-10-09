@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import BannerHero from '../components/BannerHero';
 import Header from '../components/Header';
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
       
       <Header />
       <main>
-        <h1>Hello World</h1>
+        <BannerHero />
       </main>
 
       <footer>

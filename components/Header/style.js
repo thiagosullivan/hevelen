@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
     background-color: rgba(0,0,0,.8);
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
 
     .header__content {
         padding: 1rem;
@@ -35,7 +39,8 @@ export const HeaderNavegation = styled.nav`
         display: flex;
 
         li {
-            margin: 0 1.37rem;
+            margin: 0 1.1rem;
+
             &:first-child {
                 margin-left: 0;
             }
@@ -48,7 +53,7 @@ export const HeaderNavegation = styled.nav`
                 color: ${({theme}) => theme.white};
                 font-family: 'Teko', sans-serif;
                 font-weight: 600;
-                letter-spacing: 1px;
+                letter-spacing: 2px;
                 transition: all 100ms ease-in;
 
                 &:hover {
