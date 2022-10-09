@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import BannerHero from '../components/BannerHero';
 import Header from '../components/Header';
+import SectionTwo from '../components/SectionTwo';
+import Services from '../components/Services';
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <Header />
       <main>
         <BannerHero />
+        <SectionTwo />
+        <Services />
       </main>
 
       <footer>

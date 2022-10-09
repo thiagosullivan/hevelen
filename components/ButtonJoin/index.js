@@ -11,13 +11,14 @@ const ButtonJoinContainer = styled.div`
         height: 50px;
         background-color: ${({theme}) => theme.secondary};
         color: ${({theme}) => theme.white};
+        text-transform: uppercase;
     }
 `
 
-function ButtonJoin() {
+function ButtonJoin({ text }) {
   return (
     <ButtonJoinContainer>
-        <Link href="/">Join Us</Link>
+        <Link href="/">{text}</Link>
     </ButtonJoinContainer>
   )
 }
