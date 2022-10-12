@@ -39,6 +39,7 @@ export const BlogCard = styled.section`
     font-family: 'Montserrat', sans-serif;
     border-radius: 5px;
     overflow: hidden;
+    transition: all 150ms ease-out;
 
     .blog__home__img {
         max-width: 365px;

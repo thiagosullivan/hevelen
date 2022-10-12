@@ -1,10 +1,11 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import ButtonJoin from '../ButtonJoin';
 import { BlogCard, BlogHomeContainer } from './style';
 
 function BlogHome({posts}) {
-    console.log(posts, 'POST COMPONENT')
+    // console.log(posts, 'POST COMPONENT')
   return (
     <BlogHomeContainer>
         <div className='bloghome__content'>
@@ -14,18 +15,22 @@ function BlogHome({posts}) {
                 {posts.slice( 0, 3 ).map((post, index) => {
                     return (
                         <BlogCard key={index}>
-                            <div className='blog__home__img'>
-                                <div className='blog__home__date'>
-                                    <span>{new Date(post.createdAt).toLocaleDateString("pt-BR", {day: "2-digit"})}</span>
-                                    <span>{new Date(post.createdAt).toLocaleDateString("pt-BR", {month: "short"})}</span>
-                                </div>
-                                <Image src={post.postImg.url} layout="fill"/>
-                            </div>
-                            <div className='blog__home__bottom__txt'>
-                                <div className='blog__home__author'>Postado por: <span>{post.postAuthor.name}</span></div>
-                                <h4>{post.title.length > 75 ? post.title.substr(0, 75) + "..." : post.title}</h4>
-                                <p>{post.resume.length > 110 ? post.resume.substr(0, 110) + "..." : post.resume}</p>
-                            </div>
+                            <Link href={`/blog/${post.slug}`} key={index}>
+                                <a>
+                                    <div className='blog__home__img'>
+                                        <div className='blog__home__date'>
+                                            <span>{new Date(post.createdAt).toLocaleDateString("pt-BR", {day: "2-digit"})}</span>
+                                            <span>{new Date(post.createdAt).toLocaleDateString("pt-BR", {month: "short"})}</span>
+                                        </div>
+                                        <Image src={post.postImg.url} layout="fill"/>
+                                    </div>
+                                    <div className='blog__home__bottom__txt'>
+                                        <div className='blog__home__author'>Postado por: <span>{post.postAuthor.name}</span></div>
+                                        <h4>{post.title.length > 75 ? post.title.substr(0, 75) + "..." : post.title}</h4>
+                                        <p>{post.resume.length > 110 ? post.resume.substr(0, 110) + "..." : post.resume}</p>
+                                    </div>
+                                </a>
+                            </Link>                            
                         </BlogCard>
                     )
                 })}
