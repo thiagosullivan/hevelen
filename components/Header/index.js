@@ -73,11 +73,7 @@ function Header() {
                 </HeaderSocialMedia>
             </div>
         </div>
-        { showSearch ?
-            <SearchComp setShowSearch={setShowSearch} />
-         :
-            ''
-        }
+        { showSearch && <SearchComp setShowSearch={setShowSearch} /> }
     </HeaderContainer>
   )
 }

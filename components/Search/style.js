@@ -32,5 +32,9 @@ export const SearchForm = styled.form`
         border: none;
         border-bottom: 1px solid ${({theme}) => theme.white};
         width: 100%;
+        color: ${({theme}) => theme.white};
+        outline: none;
+        font-size: 1.4rem;
+        padding: 0 0 .5rem 1rem
     }
 `
