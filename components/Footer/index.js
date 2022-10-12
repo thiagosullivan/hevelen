@@ -39,7 +39,7 @@ function Footer() {
                         </li>
                         <li>
                             <GrFormCheckmark />
-                            <Link href="/">Blog</Link>
+                            <Link href="/blog">Blog</Link>
                         </li>
                         <li>
                             <GrFormCheckmark />
