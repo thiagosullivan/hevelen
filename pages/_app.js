@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
       <ThemeProvider theme={theme}>
         <Toaster position="bottom-right" />
         <NextNProgress
-          color={theme.primary}
+          color={theme.secondary}
           startPosition={0.3}
           stopDelayMs={200}
           height={3}
