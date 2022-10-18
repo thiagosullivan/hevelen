@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ServicesContainer = styled.section`
-    background: url('https://raw.githubusercontent.com/thiagosullivan/hevelen/main/assets/sec3-banner.jpg') no-repeat;
+    background: url('https://raw.githubusercontent.com/thiagosullivan/hevelen/main/assets/sec3-banner-2.jpg') no-repeat;
     background-size: cover;
 
     .services__content {

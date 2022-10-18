@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const NewsLetterHomeContainer = styled.section`
-    background: url('https://raw.githubusercontent.com/thiagosullivan/hevelen/main/assets/newsletter-banner-2.jpg') no-repeat;
+    background: url('https://raw.githubusercontent.com/thiagosullivan/hevelen/main/assets/newsletter-banner-2-2.jpg') no-repeat;
     background-size: cover;
+    background-position: 50% 22%;
     padding: 5.6rem 1rem;
     position: relative;
     overflow: hidden;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const BannerHeroContainer = styled.section`
     backdrop-filter: brightness(.1);
-    background-image: url('https://raw.githubusercontent.com/thiagosullivan/hevelen/main/assets/banner-hero.jpg');
+    background-image: url('https://raw.githubusercontent.com/thiagosullivan/hevelen/main/assets/banner-hero-hev-2.webp');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20rem 0;
