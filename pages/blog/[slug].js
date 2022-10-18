@@ -17,8 +17,9 @@ function PostsPage({ post, categories}) {
     <div id='post__page'>
         <Head>
             <title>{post.title} | Hevelen Jeronymo</title>
-            <meta name="description" content="" />
             <meta name="title" content={`${post.title} | Hevelen Jeronymo`}/>
+            <meta property="og:title" content={`${post.title} | Hevelen Jeronymo`} />
+            <meta property="twitter:title" content={`${post.title} | Hevelen Jeronymo`} />
         </Head>
         <Header />
             <PostContainer>

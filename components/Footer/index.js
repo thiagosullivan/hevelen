@@ -16,7 +16,7 @@ function Footer() {
                     <Link href="/">
                         <Image src={FooterLogo} width={200} height={150}/>
                     </Link>
-                    <p>Far from the countries Vokalia and Consonantia, the live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+                    <p>Hevelen Jeronymo, Profissional de Educação Física especialista em gerar resultados. Flexibilidade para realizar seu treino em qualquer academia, sem ficar preso a horários. Personal Trainer em Londrina-PR</p>
                 </div>
                 <nav>
                     <p>Links Rápidos</p>
