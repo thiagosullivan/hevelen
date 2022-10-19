@@ -1,8 +1,19 @@
 import styled from "styled-components";
 
 export const SectionTwoContainer = styled.section`
-    display: flex;
-    align-items: center;
+    background-color: #080808;
+
+    h2 {
+        text-align: center;
+        font-family: 'Paytone One', sans-serif;
+        font-size: 2.5rem;
+        color: ${({theme}) => theme.white};
+        padding: 3rem 1rem;
+    }
+    .section__two__bottom {
+        display: flex;
+        align-items: center;
+    }
 `
 
 export const SectionTwoCard = styled.section`
@@ -23,7 +34,7 @@ export const SectionTwoCard = styled.section`
         background-size: cover;
     }
     .card__txt {
-        max-width: 400px;
+        max-width: 550px;
         width: 100%;
         margin: 0 auto;
         display: flex;
