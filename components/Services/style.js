@@ -40,7 +40,7 @@ export const ServicesContainer = styled.section`
                 font-weight: bold;
                 color: ${({theme}) => theme.white};
                 text-transform: uppercase;
-                max-width: 570px;
+                /* max-width: 600px; */
                 line-height: 50px;
             }
         }
@@ -57,7 +57,8 @@ export const ServicesCard = styled.div`
     background-color: ${({theme}) => theme.white};
     max-width: 380px;
     width: 100%;
-    padding: 4rem 2.5rem;
+    min-height: 412px;
+    padding: 2rem 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,7 +79,7 @@ export const ServicesCard = styled.div`
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
-        line-height: 30px;
+        line-height: 25px;
     }
 
 `
