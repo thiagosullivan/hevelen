@@ -6,7 +6,7 @@ import { GalleryHomeContainer } from './style';
 function GalleryHome() {
     // console.log(data)
   return (
-    <GalleryHomeContainer>
+    <GalleryHomeContainer id='gallery'>
         
         <p className='subtitle'>Galeria</p>
         <div className='gallery__container'>
@@ -32,7 +32,7 @@ function GalleryHome() {
             rel="noreferrer noopener"
             target="_blank"
         >
-            View More
+            Siga-me no instagram <br/> @hevelenjeronymo
         </a>
     </GalleryHomeContainer>
   )

@@ -54,6 +54,7 @@ export const GalleryHomeContainer = styled.section`
         border: 2px solid transparent;
         box-shadow: 0px 0px 4px rgba(0,0,0,.8);
         transition: all 150ms ease-out;
+        line-height: 1;
 
         &:hover {
             border: 2px solid ${({theme}) => theme.secondary};
