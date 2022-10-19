@@ -16,17 +16,21 @@ export const BannerHeroContainer = styled.section`
         font-family: 'Paytone One', sans-serif;
         text-transform: uppercase;
         text-align: center;
+        letter-spacing: 2px;
+        text-shadow: 0 0 5px rgba(0, 0, 0, .8);
     }
     h1 {
         font-size: 8.4rem;
         font-family: 'Paytone One', sans-serif;
         text-transform: uppercase;
         text-align: center;
+        text-shadow: 0 0 5px rgba(0, 0, 0, .8);
     }
     p {
         font-size: 1.25rem;
         font-family: 'Montserrat', sans-serif;
         text-align: center;
         margin-bottom: 2.5rem;
+        text-shadow: 0 0 5px rgba(0, 0, 0, .8);
     }
 `;

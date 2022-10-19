@@ -5,10 +5,10 @@ import { BannerHeroContainer } from './style'
 function BannerHero() {
   return (
     <BannerHeroContainer>
-        <h3>Build Up Your Body</h3>
+        <h3>Construa seu corpo</h3>
         <h1>Hevelen Jeronymo</h1>
-        <p>Build Your Body and Fitness with Professional Touch</p>
-        <ButtonJoin text="Join Us" link="/" />
+        <p>O meu compromisso é o seu objetivo.</p>
+        <ButtonJoin text="Fale comigo" link="https://api.whatsapp.com/send?phone=554396386856" />
     </BannerHeroContainer>
   )
 }
