@@ -17,31 +17,18 @@ function Header() {
     <HeaderContainer>
         <div className='header__content'>
             <Link href="/">
-                <Image src={LogoHeader} width={125} height={95}/>
+                <a>
+                    <Image src={LogoHeader} width={125} height={95} alt="Logo Header"/>
+                </a>
             </Link>
             <HeaderNavegation>
                 <ul>
-                    <li>
-                        <Link href="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link href="/">Sobre</Link>
-                    </li>
-                    <li>
-                        <Link href="/">Preço</Link>
-                    </li>
-                    <li>
-                        <Link href="/">Galeria</Link>
-                    </li>
-                    <li>
-                        <Link href="/">Páginas</Link>
-                    </li>
-                    <li>
-                        <Link href="/">Blog</Link>
-                    </li>
-                    <li>
-                        <Link href="/">Contato</Link>
-                    </li>
+                    <li><Link href="/">Home</Link></li>
+                    <li><Link href="/#about">Sobre</Link></li>
+                    <li><Link href="/#services">Serviços</Link></li>
+                    <li><Link href="/#gallery">Galeria</Link></li>
+                    <li><Link href="/blog">Blog</Link></li>
+                    <li><Link href="/contato">Contato</Link></li>
                 </ul>
             </HeaderNavegation>
             <div className='header__col3'>
@@ -64,7 +51,7 @@ function Header() {
                         <FaFacebookF />
                     </a>
                     <a
-                        href="https://www.google.com.br"
+                        href="https://api.whatsapp.com/send?phone=554396386856"
                         rel="noreferrer noopener"
                         target="_blank"
                     >

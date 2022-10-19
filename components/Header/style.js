@@ -40,6 +40,7 @@ export const HeaderNavegation = styled.nav`
 
         li {
             margin: 0 1.1rem;
+            cursor: pointer;
 
             &:first-child {
                 margin-left: 0;
