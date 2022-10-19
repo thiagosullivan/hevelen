@@ -14,7 +14,7 @@ function Footer() {
             <div className='footer__top'>
                 <div className='footer__col1'>
                     <Link href="/">
-                        <Image src={FooterLogo} width={200} height={150}/>
+                        <Image src={FooterLogo} width={200} height={150} alt="Logo footer"/>
                     </Link>
                     <p>Hevelen Jeronymo, Profissional de Educação Física especialista em gerar resultados. Flexibilidade para realizar seu treino em qualquer academia, sem ficar preso a horários. Personal Trainer em Londrina-PR</p>
                 </div>
@@ -22,28 +22,52 @@ function Footer() {
                     <p>Links Rápidos</p>
                     <ul>
                         <li>
-                            <GrFormCheckmark />
-                            <Link href="/">Home</Link>
+                            <Link href="/">
+                                <a>
+                                    <GrFormCheckmark />
+                                    Home
+                                </a>
+                            </Link>
                         </li>
                         <li>
-                            <GrFormCheckmark />
-                            <Link href="/">About Us</Link>
+                            <Link href="/#about">
+                                <a>
+                                    <GrFormCheckmark />
+                                    Sobre
+                                </a>
+                            </Link>
                         </li>
                         <li>
-                            <GrFormCheckmark />
-                            <Link href="/">Testimonials</Link>
+                            <Link href="/#services">
+                                <a>
+                                    <GrFormCheckmark />
+                                    Serviços
+                                </a>
+                            </Link>
                         </li>
                         <li>
-                            <GrFormCheckmark />
-                            <Link href="/">Classes</Link>
+                            <Link href="/#gallery">
+                                <a>
+                                    <GrFormCheckmark />
+                                    Galeria
+                                </a>
+                            </Link>
                         </li>
                         <li>
-                            <GrFormCheckmark />
-                            <Link href="/blog">Blog</Link>
+                            <Link href="/blog">
+                                <a>
+                                    <GrFormCheckmark />
+                                    Blog
+                                </a>
+                            </Link>
                         </li>
                         <li>
-                            <GrFormCheckmark />
-                            <Link href="/">Contact</Link>
+                            <Link href="/contato">
+                                <a>
+                                    <GrFormCheckmark />
+                                    Contato
+                                </a>
+                            </Link>
                         </li>
                     </ul>
                 </nav>
@@ -52,7 +76,9 @@ function Footer() {
                     <div className='contact__footer'>
                         <div>
                             <MdLocationPin />
-                            <p>Informações de Contato</p>
+                            <p>Rua Higienópolis, 1000 <br/>
+                                Centro, Londrina - PR
+                            </p>
                         </div>
                         <a
                             href='https://www.google.com.br'
@@ -60,7 +86,7 @@ function Footer() {
                             target="_blank"
                         >
                             <MdPhone />
-                            <p>+ 1235 2355 98</p>
+                            <p>&#40;43&#41; 9638-6856</p>
                         </a>
                         <a
                             href='https://www.google.com.br'
@@ -68,7 +94,7 @@ function Footer() {
                             target="_blank"
                         >   
                             <MdOutlineEmail />
-                            <p>info@yoursite.com</p>
+                            <p>contato@heveleneducadorafisica.com.br</p>
                         </a>
                         <div>
                             <AiOutlineClockCircle />
@@ -78,7 +104,8 @@ function Footer() {
                 </div>
             </div>
             <div className='footer__bottom'>
-                <p>© 2022 <strong>Hevelen Jeronymo</strong> - Desenvolvido por <strong>Digital Cloud Marketing</strong>.</p>
+                <p>© 2022 <strong>Hevelen Jeronymo</strong> - Desenvolvido por <strong><a href="https://digitalcloudbrasil.com.br/" rel="noreferrer noopener"
+                target="_blank">Digital Cloud Marketing</a></strong>.</p>
             </div>
         </div>
 

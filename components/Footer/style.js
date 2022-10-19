@@ -43,10 +43,10 @@ export const FooterContainer = styled.footer`
                 li {
                     font-family: 'Montserrat', sans-serif;
                     font-weight: 300;
-                    color: ${({theme}) => theme.white};
-                    display: flex;
-                    align-items: center;
+                    color: ${({theme}) => theme.white};                    
                     margin-bottom: .1rem;
+                    cursor: pointer;
+                    width: max-content;
 
                     svg {
                         font-size: 2.5rem;
@@ -61,12 +61,22 @@ export const FooterContainer = styled.footer`
                         font-size: 1rem;
                         border: 1px solid transparent;
                         transition: all 150ms ease-out;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    p {
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 300;
+                        color: ${({theme}) => theme.white};
+                        font-size: 1rem;
+                        margin-bottom: 0;
                     }
 
                     &:hover a {
                         border-bottom: 1px solid ${({ theme }) => theme.secondary};
                     }
-                    &:hover polyline {
+                    &:hover a polyline {
                         stroke: ${({ theme }) => theme.white};
                     }
                 }
