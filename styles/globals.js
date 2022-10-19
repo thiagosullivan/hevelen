@@ -20,6 +20,9 @@ export default createGlobalStyle`
     }
     scroll-behavior: smooth;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     background: ${props => props.theme.background};
     font: 400 1rem 'Montserrat', sans-serif;

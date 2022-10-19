@@ -13,10 +13,10 @@ function Blog() {
             <meta property="twitter:title" content="Blog | Hevelen Jeronymo" />
         </Head>
         <Header />
-        <main>
-
-        </main>
         <Footer />
+        <main>
+          <h1>BLOG</h1>
+        </main>
     </div>
   )
 }
