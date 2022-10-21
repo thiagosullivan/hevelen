@@ -14,6 +14,16 @@ export const SectionTwoContainer = styled.section`
         display: flex;
         align-items: center;
     }
+    
+    @media screen and (max-width: 820px){
+        h2 {
+            font-size: 1.8rem;
+        }
+        .section__two__bottom {
+            flex-direction: column;
+        }
+    }
+
 `
 
 export const SectionTwoCard = styled.section`
@@ -28,10 +38,14 @@ export const SectionTwoCard = styled.section`
     .card__one {
         background: url('https://raw.githubusercontent.com/thiagosullivan/hevelen/main/assets/sec2-img.jpg') no-repeat;
         background-size: cover;
+        background-position: center center;
+        padding: 0 2rem;
     }
     .card__two {
         background: url('https://raw.githubusercontent.com/thiagosullivan/hevelen/main/assets/sec2-img-2.jpg') no-repeat;
         background-size: cover;
+        background-position: center center;
+        padding: 0 2rem;
     }
     .card__txt {
         max-width: 550px;
@@ -52,6 +66,21 @@ export const SectionTwoCard = styled.section`
             font-family: 'Montserrat', sans-serif;
             font-size: 1rem;
             line-height: 28px;
+        }
+    }
+
+    @media screen and (max-width: 820px){
+
+        width: 100%;
+        .card__txt {
+            max-width: unset;
+            padding: 6rem 0;
+        }
+    }
+    @media screen and (max-width: 520px) {
+        h3 {
+            font-size: 1.7rem;
+            letter-spacing: 2px;
         }
     }
 `
