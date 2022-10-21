@@ -13,6 +13,12 @@ function Header() {
     const [blockScroll, allowScroll] = useScrollBlock();
     const [ showSearch, setShowSearch ] = useState(false);
 
+    if(showSearch == true){
+        blockScroll();
+    } else {
+        allowScroll();
+    }
+
   return (
     <HeaderContainer>
         <div className='header__content'>

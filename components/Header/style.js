@@ -31,6 +31,22 @@ export const HeaderContainer = styled.header`
             margin-right: 1rem;
         }
     }
+
+    @media screen and (max-width: 1200px){
+        .header__content {
+            padding: 1rem 2rem;
+        }
+
+        .header__col3 {
+            button {
+                font-size: 2rem;
+                margin-right: .5rem;
+            }
+        }
+    }
+    @media screen and (max-width: 960px){
+        display: none;
+    }
 `
 
 export const HeaderNavegation = styled.nav`
@@ -63,6 +79,18 @@ export const HeaderNavegation = styled.nav`
             }
         }
 
+    }
+
+    @media screen and (max-width: 1200px) {
+        ul {
+            li {
+                margin: 0 .8rem;
+
+                a {
+                    font-size: 1.2rem;
+                }
+            }
+        }
     }
 `;
 
@@ -100,7 +128,19 @@ export const HeaderSocialMedia = styled.div`
         }
 
         &:last-child {
-            padding-left: 2px;
+            padding-left: 0px;
+        }
+    }
+
+    @media screen and (max-width: 1200px){
+        a {
+            width: 30px;
+            height: 30px;
+            margin: 0 .42rem;
+            
+            svg {
+                font-size: 1.3rem;
+            }
         }
     }
 `;
