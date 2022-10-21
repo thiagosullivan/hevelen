@@ -3,6 +3,7 @@ import React from 'react';
 import Aside from '../../components/Aside';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
+import HeaderMobile from '../../components/HeaderMobile';
 import PostPage from '../../components/PostPage';
 import PostTitle from '../../components/PostPage/postTitle';
 import { getAllPosts, getAllCategories } from '../../lib/dato-cms';
@@ -22,6 +23,7 @@ function PostsPage({ post, categories}) {
             <meta property="twitter:title" content={`${post.title} | Hevelen Jeronymo`} />
         </Head>
         <Header />
+        <HeaderMobile />
             <PostContainer>
                 <PostTitle post={post} />
                 <div className='post__content'>

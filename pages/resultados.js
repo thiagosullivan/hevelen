@@ -7,6 +7,7 @@ import { getAllPosts, getAllCategories } from '../lib/dato-cms';
 import { ResultContainerPage } from '../styles/resultPage';
 import Link from 'next/link';
 import PostCardResults from '../components/PostCardsResults';
+import HeaderMobile from '../components/HeaderMobile';
 
 export async function getStaticProps() {
   const posts = (await getAllPosts()) || [];
@@ -56,6 +57,7 @@ function ResultsPage({posts, categories}) {
             <meta property="twitter:title" content="Resultados | Hevelen Jeronymo" />
         </Head>
         <Header />
+        <HeaderMobile />
         <main>
           <ResultContainerPage>
             {filteredPosts.length === 0 && (

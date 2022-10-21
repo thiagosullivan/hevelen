@@ -2,6 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import HeaderMobile from '../components/HeaderMobile';
 
 function Contato() {
   return (
@@ -13,6 +14,7 @@ function Contato() {
             <meta property="twitter:title" content="Contato | Hevelen Jeronymo" />
         </Head>
         <Header />
+        <HeaderMobile />
         <Footer />
         <main>
           <h1>CONTATO</h1>

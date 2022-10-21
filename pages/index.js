@@ -5,6 +5,7 @@ import BlogHome from '../components/BlogHome';
 import Footer from '../components/Footer';
 import GalleryHome from '../components/GalleryHome';
 import Header from '../components/Header';
+import HeaderMobile from '../components/HeaderMobile';
 import NewsletterHome from '../components/NewsletterHome';
 import SectionTwo from '../components/SectionTwo';
 import Services from '../components/Services';
@@ -23,6 +24,7 @@ export default function Home({posts}) {
       </Head>
       
       <Header />
+      <HeaderMobile />
       <main>
         <BannerHero />
         <SectionTwo />
@@ -30,7 +32,7 @@ export default function Home({posts}) {
         <AboutHome />
         <GalleryHome />
         <BlogHome posts={posts} />
-        <NewsletterHome />
+        {/* <NewsletterHome /> */}
       </main>
 
       <Footer />
