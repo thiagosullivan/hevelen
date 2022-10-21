@@ -5,6 +5,7 @@ export const BannerHeroContainer = styled.section`
     background-image: url('https://raw.githubusercontent.com/thiagosullivan/hevelen/main/assets/banner-hero-hev-2.webp');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     padding: 20rem 0;
     color: ${({theme}) => theme.white};
     display: flex;
@@ -32,5 +33,31 @@ export const BannerHeroContainer = styled.section`
         text-align: center;
         margin-bottom: 2.5rem;
         text-shadow: 0 0 5px rgba(0, 0, 0, .8);
+    }
+
+    @media screen and (max-width: 960px) {
+        padding: 10rem 2rem;
+
+        h3 {
+            font-size: 1.7rem;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            font-size: 6rem;
+            margin-bottom: 2rem;
+            line-height: 90px;
+        }
+    }
+
+    @media screen and (max-width: 580px){
+        h3 {
+            font-size: 1rem;
+            margin-bottom: 3rem;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 4rem;
+            line-height: 50px;
+        }
     }
 `;
