@@ -32,9 +32,27 @@ export const SearchForm = styled.form`
         border: none;
         border-bottom: 1px solid ${({theme}) => theme.white};
         width: 100%;
+        height: 40px;
         color: ${({theme}) => theme.white};
         outline: none;
         font-size: 1.4rem;
         padding: 0 0 .5rem 1rem
+    }
+
+    button {
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        padding: 0.75rem;
+        background-color: ${({theme}) => theme.secondary};
+        color: ${({theme}) => theme.white};
+        border: 1px solid transparent;
+        transition: all 150ms ease-in;
+        height: 40px;
+
+        &:hover {
+            background-color: ${({theme}) => theme.white};
+            border: 1px solid ${({theme}) => theme.secondary};
+            color: ${({theme}) => theme.secondary};
+        }
     }
 `
