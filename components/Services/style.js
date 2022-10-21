@@ -50,11 +50,46 @@ export const ServicesContainer = styled.section`
             align-items: center;
         }
     }
-    
+
+    @media screen and (max-width: 960px){
+        .services__top {
+            h2 {
+                font-size: 2rem !important;
+                line-height: 30px !important;
+            }
+        }
+        .services__bottom {
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (max-width: 710px){
+        .services__top {
+            h2 {
+                font-size: 1.5rem !important;
+            }
+        }
+    }
+
+    @media screen and (max-width: 560px){
+        .services__content {
+            .services__top {
+                flex-direction: column;
+                align-items: center;
+
+                h2 {
+                    font-size: 1.7rem;
+                    line-height: 30px;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
 `
 
 export const ServicesCard = styled.div`
     background-color: ${({theme}) => theme.white};
+    margin: 0 1rem;
     max-width: 380px;
     width: 100%;
     min-height: 412px;
@@ -80,6 +115,23 @@ export const ServicesCard = styled.div`
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         line-height: 25px;
+    }
+
+    @media screen and (max-width: 1120px){
+        min-height: 512px;
+    }
+
+    @media screen and (max-width: 960px) {
+        max-width: 780px;
+        min-height: unset;
+        margin-bottom: 2rem;
+
+        svg {
+            margin-bottom: 1rem;
+        }
+        h4 {
+            margin-bottom: 1rem;
+        }
     }
 
 `
