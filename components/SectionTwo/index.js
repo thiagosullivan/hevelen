@@ -11,7 +11,7 @@ function SectionTwo() {
                 <div className='card__one'>
                     <div className='card__txt'>
                         <h3>Emagrecimento</h3>
-                        <p>Tenha ajudado muitas pessoas a alcançarem seus objetivos. Com a orientação correta e o treino adequado, certamente chegaremos juntos no seu objetivo.</p>
+                        <p>Tenho ajudado muitas pessoas a alcançarem seus objetivos. Com a orientação correta e o treino adequado, certamente chegaremos juntos no seu objetivo.</p>
                         <ButtonJoin text="Fale comigo" link="https://api.whatsapp.com/send?phone=554396386856" />
                     </div>
                 </div>
