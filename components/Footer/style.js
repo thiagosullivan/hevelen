@@ -82,6 +82,9 @@ export const FooterContainer = styled.footer`
                 }
             }
             .footer__col3 {
+
+                max-width: 230px;
+
                 p:first-child {
                     font-family: 'Teko', sans-serif;
                     color: ${({theme}) => theme.white};
@@ -93,6 +96,7 @@ export const FooterContainer = styled.footer`
                         color: ${({theme}) => theme.secondary};
                         font-size: 2.5rem;
                         margin-right: .8rem;
+                        min-width: 40px;
                     }
                     div {
                         display: flex;
@@ -117,8 +121,42 @@ export const FooterContainer = styled.footer`
                             color: ${({theme}) => theme.white};
                         }
                     }
+                    .footer__email {
+                        p {
+                            word-break: break-all;
+                        }
+                    }
                 }
 
+            }
+
+            @media screen and (max-width: 1130px) {
+                .footer__col1 {
+                    flex-direction: column;
+                    align-items: center;
+                    max-width: unset;
+                    width: unset;
+
+                    p {
+                        margin-top: 2rem;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 770px) {
+                flex-direction: column;
+                align-items: center;
+
+                .footer__col1 {
+                    p {
+                        margin-left: 0;
+                        max-width: 500px;
+                    }
+                    margin-bottom: 2rem;
+                }
+                nav {
+                    margin-bottom: 2rem;
+                }
             }
 
         }

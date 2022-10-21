@@ -72,33 +72,33 @@ function Footer() {
                     </ul>
                 </nav>
                 <div className='footer__col3'>
-                    <p>Informações de Contato</p>
+                    <p>Informações e Contato</p>
                     <div className='contact__footer'>
                         <div>
                             <MdLocationPin />
-                            <p>Rua Higienópolis, 1000 <br/>
-                                Centro, Londrina - PR
+                            <p>Londrina - PR
                             </p>
                         </div>
                         <a
-                            href='https://www.google.com.br'
+                            href="tel:+5543996386856"
                             rel="noreferrer noopener"
                             target="_blank"
                         >
                             <MdPhone />
-                            <p>&#40;43&#41; 9638-6856</p>
+                            <p>&#40;43&#41; 99638-6856</p>
                         </a>
                         <a
-                            href='https://www.google.com.br'
+                            href='mailto:contato@heveleneducadorafisica.com.br'
                             rel="noreferrer noopener"
                             target="_blank"
+                            className='footer__email'
                         >   
                             <MdOutlineEmail />
                             <p>contato@heveleneducadorafisica.com.br</p>
                         </a>
                         <div>
                             <AiOutlineClockCircle />
-                            <p>8:00 am - 6:00pm</p>
+                            <p>Segunda à Sábado</p>
                         </div>
                     </div>
                 </div>
